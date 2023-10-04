@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4477A822A965EA10027ACAF /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4477A812A965EA10027ACAF /* NetworkConstants.swift */; };
+		D4A1C4E02A55290D00C3605A /* InhaMealApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C4DF2A55290D00C3605A /* InhaMealApp.swift */; };
+		D4A1C4E22A55290D00C3605A /* MealDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C4E12A55290D00C3605A /* MealDetails.swift */; };
+		D4A1C4F82A552AD900C3605A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C4F72A552AD900C3605A /* Meal.swift */; };
+		D4A1C4FC2A5532E100C3605A /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C4FB2A5532E100C3605A /* Double+.swift */; };
+		D4A1C51D2A558EDA00C3605A /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C51C2A558EDA00C3605A /* Color+.swift */; };
+		D4A1C51F2A558F8C00C3605A /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C51E2A558F8C00C3605A /* String+.swift */; };
+		D4A1C5222A55900700C3605A /* MealList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C5212A55900700C3605A /* MealList.swift */; };
+		D4A1C5262A5590BF00C3605A /* Meal+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C5252A5590BF00C3605A /* Meal+.swift */; };
+		D4A1C52A2A5595F100C3605A /* RastrauntPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C5292A5595F100C3605A /* RastrauntPageView.swift */; };
+		D4A1C52E2A55971200C3605A /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C52D2A55971200C3605A /* Array+.swift */; };
+		D4A1C5542A55B5AE00C3605A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A1C5532A55B5AE00C3605A /* WidgetKit.framework */; };
+		D4A1C5562A55B5AE00C3605A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A1C5552A55B5AE00C3605A /* SwiftUI.framework */; };
+		D4A1C55D2A55B5AF00C3605A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A1C55C2A55B5AF00C3605A /* Assets.xcassets */; };
+		D4A1C56C2A56E16800C3605A /* MainRestaurantUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C56B2A56E16800C3605A /* MainRestaurantUseCase.swift */; };
+		D4A1C56F2A56EB3400C3605A /* SearchMealUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C56E2A56EB3400C3605A /* SearchMealUseCase.swift */; };
+		D4BDDAF72AB7477B00C563A7 /* InhaMealWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C55A2A55B5AE00C3605A /* InhaMealWidget.swift */; };
+		D4BDDAF92AB7477D00C563A7 /* InhaMealWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C5582A55B5AE00C3605A /* InhaMealWidgetBundle.swift */; };
+		D4BDDAFD2AB74D2000C563A7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D4BDDAFC2AB74D2000C563A7 /* Alamofire */; };
+		D4BDDB042AC57A9600C563A7 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDDB032AC57A9600C563A7 /* Cafe.swift */; };
+		D4BDDB062AC57AA400C563A7 /* InhaRestraunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDDB052AC57AA400C563A7 /* InhaRestraunt.swift */; };
+		D4BDDB092AC5879400C563A7 /* DateSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDDB082AC5879400C563A7 /* DateSelectView.swift */; };
+		D4BDDB0A2AC5890E00C563A7 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C5272A55911600C3605A /* Date+.swift */; };
+		D4BDDB0D2AC5A8BF00C563A7 /* GetRestaurantRepositoryImplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDDB0C2AC5A8BF00C563A7 /* GetRestaurantRepositoryImplement.swift */; };
+		D4BDDB102AC5A8FB00C563A7 /* GetRestaurantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDDB0F2AC5A8FB00C563A7 /* GetRestaurantRepository.swift */; };
+		D4D13B9F2AB745DE0094D091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A1C4E32A55290E00C3605A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4D13B9B2AB7449C0094D091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A1C4D42A55290D00C3605A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4A1C4DB2A55290D00C3605A;
+			remoteInfo = InhaMeal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4A1C54C2A55B50D00C3605A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D4477A812A965EA10027ACAF /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		D4A1C4DC2A55290D00C3605A /* InhaMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InhaMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A1C4DF2A55290D00C3605A /* InhaMealApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InhaMealApp.swift; sourceTree = "<group>"; };
+		D4A1C4E12A55290D00C3605A /* MealDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetails.swift; sourceTree = "<group>"; };
+		D4A1C4E32A55290E00C3605A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4A1C4F72A552AD900C3605A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		D4A1C4FB2A5532E100C3605A /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		D4A1C51C2A558EDA00C3605A /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		D4A1C51E2A558F8C00C3605A /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		D4A1C5212A55900700C3605A /* MealList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealList.swift; sourceTree = "<group>"; };
+		D4A1C5252A5590BF00C3605A /* Meal+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+.swift"; sourceTree = "<group>"; };
+		D4A1C5272A55911600C3605A /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		D4A1C5292A5595F100C3605A /* RastrauntPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RastrauntPageView.swift; sourceTree = "<group>"; };
+		D4A1C52D2A55971200C3605A /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		D4A1C5512A55B5AD00C3605A /* InhaMealWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InhaMealWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A1C5532A55B5AE00C3605A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D4A1C5552A55B5AE00C3605A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D4A1C5582A55B5AE00C3605A /* InhaMealWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InhaMealWidgetBundle.swift; sourceTree = "<group>"; };
+		D4A1C55A2A55B5AE00C3605A /* InhaMealWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InhaMealWidget.swift; sourceTree = "<group>"; };
+		D4A1C55C2A55B5AF00C3605A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4A1C55E2A55B5AF00C3605A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4A1C56B2A56E16800C3605A /* MainRestaurantUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRestaurantUseCase.swift; sourceTree = "<group>"; };
+		D4A1C56E2A56EB3400C3605A /* SearchMealUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealUseCase.swift; sourceTree = "<group>"; };
+		D4BDDB032AC57A9600C563A7 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
+		D4BDDB052AC57AA400C563A7 /* InhaRestraunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InhaRestraunt.swift; sourceTree = "<group>"; };
+		D4BDDB082AC5879400C563A7 /* DateSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectView.swift; sourceTree = "<group>"; };
+		D4BDDB0C2AC5A8BF00C563A7 /* GetRestaurantRepositoryImplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRestaurantRepositoryImplement.swift; sourceTree = "<group>"; };
+		D4BDDB0F2AC5A8FB00C563A7 /* GetRestaurantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRestaurantRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4A1C4D92A55290D00C3605A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BDDAFD2AB74D2000C563A7 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A1C54E2A55B5AD00C3605A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A1C5562A55B5AE00C3605A /* SwiftUI.framework in Frameworks */,
+				D4A1C5542A55B5AE00C3605A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4477A832A965EFA0027ACAF /* NetworkConstants */ = {
+			isa = PBXGroup;
+			children = (
+				D4477A812A965EA10027ACAF /* NetworkConstants.swift */,
+			);
+			path = NetworkConstants;
+			sourceTree = "<group>";
+		};
+		D4A1C4D32A55290D00C3605A = {
+			isa = PBXGroup;
+			children = (
+				D4A1C4DE2A55290D00C3605A /* InhaMeal */,
+				D4A1C5572A55B5AE00C3605A /* InhaMealWidget */,
+				D4A1C5522A55B5AD00C3605A /* Frameworks */,
+				D4A1C4DD2A55290D00C3605A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4A1C4DD2A55290D00C3605A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C4DC2A55290D00C3605A /* InhaMeal.app */,
+				D4A1C5512A55B5AD00C3605A /* InhaMealWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4A1C4DE2A55290D00C3605A /* InhaMeal */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C4F92A5532C900C3605A /* Extensions */,
+				D4A1C4F22A5529A100C3605A /* LifeCycle */,
+				D4A1C4EF2A55295400C3605A /* Data */,
+				D4A1C4EE2A55292900C3605A /* Domain */,
+				D4A1C4ED2A55292000C3605A /* Presentation */,
+				D4A1C4E32A55290E00C3605A /* Assets.xcassets */,
+			);
+			path = InhaMeal;
+			sourceTree = "<group>";
+		};
+		D4A1C4ED2A55292000C3605A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDDB072AC5878400C563A7 /* DateSelcetView */,
+				D4A1C52B2A5595F900C3605A /* RastrauntPageView */,
+				D4A1C5202A558FFB00C3605A /* MealList */,
+				D4A1C4F32A5529F000C3605A /* MealDeatails */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D4A1C4EE2A55292900C3605A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDDB0E2AC5A8DC00C563A7 /* RepositoryProtocol */,
+				D4A1C56A2A56E15500C3605A /* UseCases */,
+				D4A1C4F62A552A8300C3605A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D4A1C4EF2A55295400C3605A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDDB0B2AC5A89200C563A7 /* GetRestaurantRepository */,
+				D4477A832A965EFA0027ACAF /* NetworkConstants */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D4A1C4F02A55298A00C3605A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C4E12A55290D00C3605A /* MealDetails.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4A1C4F22A5529A100C3605A /* LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C4DF2A55290D00C3605A /* InhaMealApp.swift */,
+			);
+			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		D4A1C4F32A5529F000C3605A /* MealDeatails */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C4F02A55298A00C3605A /* View */,
+			);
+			path = MealDeatails;
+			sourceTree = "<group>";
+		};
+		D4A1C4F62A552A8300C3605A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C4F72A552AD900C3605A /* Meal.swift */,
+				D4BDDB032AC57A9600C563A7 /* Cafe.swift */,
+				D4BDDB052AC57AA400C563A7 /* InhaRestraunt.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D4A1C4F92A5532C900C3605A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C4FB2A5532E100C3605A /* Double+.swift */,
+				D4A1C51C2A558EDA00C3605A /* Color+.swift */,
+				D4A1C51E2A558F8C00C3605A /* String+.swift */,
+				D4A1C5252A5590BF00C3605A /* Meal+.swift */,
+				D4A1C5272A55911600C3605A /* Date+.swift */,
+				D4A1C52D2A55971200C3605A /* Array+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D4A1C5202A558FFB00C3605A /* MealList */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C5232A55902700C3605A /* View */,
+			);
+			name = MealList;
+			sourceTree = "<group>";
+		};
+		D4A1C5232A55902700C3605A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C5212A55900700C3605A /* MealList.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D4A1C52B2A5595F900C3605A /* RastrauntPageView */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C52C2A55960000C3605A /* View */,
+				D4A1C5292A5595F100C3605A /* RastrauntPageView.swift */,
+			);
+			path = RastrauntPageView;
+			sourceTree = "<group>";
+		};
+		D4A1C52C2A55960000C3605A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4A1C5522A55B5AD00C3605A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C5532A55B5AE00C3605A /* WidgetKit.framework */,
+				D4A1C5552A55B5AE00C3605A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4A1C5572A55B5AE00C3605A /* InhaMealWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C5582A55B5AE00C3605A /* InhaMealWidgetBundle.swift */,
+				D4A1C55A2A55B5AE00C3605A /* InhaMealWidget.swift */,
+				D4A1C55C2A55B5AF00C3605A /* Assets.xcassets */,
+				D4A1C55E2A55B5AF00C3605A /* Info.plist */,
+			);
+			path = InhaMealWidget;
+			sourceTree = "<group>";
+		};
+		D4A1C56A2A56E15500C3605A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1C56B2A56E16800C3605A /* MainRestaurantUseCase.swift */,
+				D4A1C56E2A56EB3400C3605A /* SearchMealUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		D4BDDB072AC5878400C563A7 /* DateSelcetView */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDDB082AC5879400C563A7 /* DateSelectView.swift */,
+			);
+			path = DateSelcetView;
+			sourceTree = "<group>";
+		};
+		D4BDDB0B2AC5A89200C563A7 /* GetRestaurantRepository */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDDB0C2AC5A8BF00C563A7 /* GetRestaurantRepositoryImplement.swift */,
+			);
+			path = GetRestaurantRepository;
+			sourceTree = "<group>";
+		};
+		D4BDDB0E2AC5A8DC00C563A7 /* RepositoryProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDDB0F2AC5A8FB00C563A7 /* GetRestaurantRepository.swift */,
+			);
+			path = RepositoryProtocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4A1C4DB2A55290D00C3605A /* InhaMeal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A1C4EA2A55290E00C3605A /* Build configuration list for PBXNativeTarget "InhaMeal" */;
+			buildPhases = (
+				D4A1C4D82A55290D00C3605A /* Sources */,
+				D4A1C4D92A55290D00C3605A /* Frameworks */,
+				D4A1C4DA2A55290D00C3605A /* Resources */,
+				D4A1C54C2A55B50D00C3605A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InhaMeal;
+			packageProductDependencies = (
+				D4BDDAFC2AB74D2000C563A7 /* Alamofire */,
+			);
+			productName = InhaMeal;
+			productReference = D4A1C4DC2A55290D00C3605A /* InhaMeal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4A1C5502A55B5AD00C3605A /* InhaMealWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A1C5622A55B5AF00C3605A /* Build configuration list for PBXNativeTarget "InhaMealWidgetExtension" */;
+			buildPhases = (
+				D4A1C54D2A55B5AD00C3605A /* Sources */,
+				D4A1C54E2A55B5AD00C3605A /* Frameworks */,
+				D4A1C54F2A55B5AD00C3605A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4D13B9C2AB7449C0094D091 /* PBXTargetDependency */,
+			);
+			name = InhaMealWidgetExtension;
+			productName = InhaMealWidgetExtension;
+			productReference = D4A1C5512A55B5AD00C3605A /* InhaMealWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4A1C4D42A55290D00C3605A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D4A1C4DB2A55290D00C3605A = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					D4A1C5502A55B5AD00C3605A = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = D4A1C4D72A55290D00C3605A /* Build configuration list for PBXProject "InhaMeal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4A1C4D32A55290D00C3605A;
+			packageReferences = (
+				D4BDDAFB2AB74D2000C563A7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = D4A1C4DD2A55290D00C3605A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4A1C4DB2A55290D00C3605A /* InhaMeal */,
+				D4A1C5502A55B5AD00C3605A /* InhaMealWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4A1C4DA2A55290D00C3605A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D13B9F2AB745DE0094D091 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A1C54F2A55B5AD00C3605A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A1C55D2A55B5AF00C3605A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4A1C4D82A55290D00C3605A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BDDAF72AB7477B00C563A7 /* InhaMealWidget.swift in Sources */,
+				D4BDDB0D2AC5A8BF00C563A7 /* GetRestaurantRepositoryImplement.swift in Sources */,
+				D4A1C52E2A55971200C3605A /* Array+.swift in Sources */,
+				D4BDDB092AC5879400C563A7 /* DateSelectView.swift in Sources */,
+				D4BDDAF92AB7477D00C563A7 /* InhaMealWidgetBundle.swift in Sources */,
+				D4A1C5262A5590BF00C3605A /* Meal+.swift in Sources */,
+				D4BDDB042AC57A9600C563A7 /* Cafe.swift in Sources */,
+				D4BDDB102AC5A8FB00C563A7 /* GetRestaurantRepository.swift in Sources */,
+				D4A1C4F82A552AD900C3605A /* Meal.swift in Sources */,
+				D4A1C51D2A558EDA00C3605A /* Color+.swift in Sources */,
+				D4A1C52A2A5595F100C3605A /* RastrauntPageView.swift in Sources */,
+				D4A1C5222A55900700C3605A /* MealList.swift in Sources */,
+				D4A1C56F2A56EB3400C3605A /* SearchMealUseCase.swift in Sources */,
+				D4A1C56C2A56E16800C3605A /* MainRestaurantUseCase.swift in Sources */,
+				D4BDDB0A2AC5890E00C563A7 /* Date+.swift in Sources */,
+				D4BDDB062AC57AA400C563A7 /* InhaRestraunt.swift in Sources */,
+				D4A1C4E22A55290D00C3605A /* MealDetails.swift in Sources */,
+				D4A1C4FC2A5532E100C3605A /* Double+.swift in Sources */,
+				D4477A822A965EA10027ACAF /* NetworkConstants.swift in Sources */,
+				D4A1C51F2A558F8C00C3605A /* String+.swift in Sources */,
+				D4A1C4E02A55290D00C3605A /* InhaMealApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A1C54D2A55B5AD00C3605A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4D13B9C2AB7449C0094D091 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4A1C4DB2A55290D00C3605A /* InhaMeal */;
+			targetProxy = D4D13B9B2AB7449C0094D091 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4A1C4E82A55290E00C3605A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4A1C4E92A55290E00C3605A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4A1C4EB2A55290E00C3605A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"/Users/changgyoseo/Projects/InhaMeal/InhaMeal/Assets.xcassets\"";
+				DEVELOPMENT_TEAM = VT6KC94KM7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pccommen.InhaMeal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4A1C4EC2A55290E00C3605A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"/Users/changgyoseo/Projects/InhaMeal/InhaMeal/Assets.xcassets\"";
+				DEVELOPMENT_TEAM = VT6KC94KM7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pccommen.InhaMeal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4A1C5632A55B5AF00C3605A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VT6KC94KM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InhaMealWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InhaMealWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pccommen.InhaMeal.InhaMealWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4A1C5642A55B5AF00C3605A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VT6KC94KM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InhaMealWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InhaMealWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pccommen.InhaMeal.InhaMealWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4A1C4D72A55290D00C3605A /* Build configuration list for PBXProject "InhaMeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A1C4E82A55290E00C3605A /* Debug */,
+				D4A1C4E92A55290E00C3605A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A1C4EA2A55290E00C3605A /* Build configuration list for PBXNativeTarget "InhaMeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A1C4EB2A55290E00C3605A /* Debug */,
+				D4A1C4EC2A55290E00C3605A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A1C5622A55B5AF00C3605A /* Build configuration list for PBXNativeTarget "InhaMealWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A1C5632A55B5AF00C3605A /* Debug */,
+				D4A1C5642A55B5AF00C3605A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4BDDAFB2AB74D2000C563A7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4BDDAFC2AB74D2000C563A7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4BDDAFB2AB74D2000C563A7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D4A1C4D42A55290D00C3605A /* Project object */;
+}
